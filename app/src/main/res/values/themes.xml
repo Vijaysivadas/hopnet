@@ -1,0 +1,8 @@
+<resources>
+    <!-- Compose draws the UI; this theme only covers the window before the first frame. -->
+    <style name="Theme.Hopnet" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>
