@@ -1,11 +1,9 @@
 package app.hopnet.services
 
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.LocationOn
-import androidx.compose.material.icons.filled.ShoppingCart
 import androidx.compose.ui.graphics.vector.ImageVector
 
 /**
@@ -34,7 +32,5 @@ object ServiceCatalog {
         messages,
         findMe,
         liveInfo,
-        HopService("food", "Food ordering", "Order from nearby restaurants, pay on delivery", Icons.Filled.ShoppingCart, available = false),
-        HopService("tickets", "Tickets", "Book bus and event tickets", Icons.Filled.DateRange, available = false),
     )
 }
