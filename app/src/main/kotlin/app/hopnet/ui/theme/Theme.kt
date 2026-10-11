@@ -1,6 +1,5 @@
 package app.hopnet.ui.theme
 
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
@@ -62,7 +61,7 @@ data class MeshColors(val online: Color, val mesh: Color, val waiting: Color, va
 val LocalMeshColors = staticCompositionLocalOf { MeshColors(Color.Gray, Color.Gray, Color.Gray, Color.Gray) }
 
 @Composable
-fun HopnetTheme(dark: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
+fun HopnetTheme(dark: Boolean = false, content: @Composable () -> Unit) {
     val scheme = if (dark) Dark else Light
     val meshColors = MeshColors(online = scheme.primary, mesh = scheme.secondary, waiting = scheme.tertiary, off = scheme.onSurfaceVariant)
     CompositionLocalProvider(LocalMeshColors provides meshColors) {
